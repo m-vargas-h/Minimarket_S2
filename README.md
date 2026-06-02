@@ -30,36 +30,6 @@ Sistema de gestión para un minimarket desarrollado con **Spring Boot 3**. Esta 
 ## Estructura del proyecto
 
 ```
-src/
-└── main/
-    ├── java/com/minimarket/
-    │   ├── MinimarketApplication.java
-    │   ├── controller/
-    │   │   ├── AuthController.java          # Login y registro (NUEVO)
-    │   │   ├── CarritoController.java
-    │   │   ├── CategoriaController.java
-    │   │   ├── DetalleVentaController.java
-    │   │   ├── HolaMundoController.java
-    │   │   ├── InventarioController.java
-    │   │   ├── ProductoController.java
-    │   │   ├── UsuarioController.java
-    │   │   └── VentaController.java
-    │   ├── entity/                          # Sin cambios respecto a S1
-    │   ├── repository/                      # Sin cambios respecto a S1
-    │   ├── service/                         # Sin cambios respecto a S1
-    │   └── security/
-    │       ├── config/SecurityConfig.java   # Reconfigurado para JWT stateless
-    │       ├── filter/JwtAuthFilter.java    # Filtro JWT por request (NUEVO)
-    │       ├── model/
-    │       │   ├── CustomUserDetails.java
-    │       │   └── LoginRequest.java
-    │       ├── service/CustomUserDetailsService.java
-    │       └── util/JwtUtil.java            # Implementación completa (NUEVO)
-    └── resources/
-        ├── application.properties
-        └── data.sql
-```
-```
 ├── 📁 .mvn
 │   └── 📁 wrapper
 │       └── 📄 maven-wrapper.properties
